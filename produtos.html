@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Ícone na Aba do Navegado -->
+    <link rel="icon" href="./assets/logo.png" />
+    <!-- Folhas de estilos -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/produtos.css" />
+    <!-- Biblioteca BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontes utilizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script defer src="./script/menu_hamburguer.js"></script>
+    <title>Metalúrgica Irmãos</title>
+    <!-- TAGS DO ANÚCIO DO GOOGLE ADS -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16467684128"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-16467684128');
+    </script>
+  </head>
+  <body>
+    <!-- ? ---------------- HEADER ----------------------->
+    <header class="header">
+      <div class="header_logo">
+        <img src="./assets/logo.png" alt="Logo da Metalúrgica Irmãos" />
+      </div>
+
+      <div class="navbar">
+        <div class="menu_hamburguer" id="menu_hamburguer">
+          <i class="bx bx-menu bx-lg"></i>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu_btn">
+          <a href="./index.html">Inicio</a>
+        </div>
+
+        <div class="menu_btn">
+          <a href="./empresa.html">Empresa</a>
+        </div>
+
+        <div class="menu_btn">
+          <a href="./produtos.html">Produtos</a>
+        </div>
+
+        <div class="menu_btn">
+          <a href="./contato.html">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- todo CONTAINER APRESENTAÇÃO ================== -->
+      <div class="produtos_apresentacao">
+        <div class="produtos_texto">
+          <div class="produtos_titulo">
+            <h1>Desde 2003, entregando <br />produtos de qualidade!</h1>
+          </div>
+
+          <div class="produtos_subtitulo">
+            <h2>
+              Com mais de 2000 clientes satisfeitos,<br />
+              nossa empresa tem mais de 20 anos <br />de tradição em Anápolis e
+              região.
+            </h2>
+          </div>
+        </div>
+        <div class="apresentacao_imagem">
+          <img
+            src="./assets/img/apresentacao_3.png"
+            alt="Foto da Empresa Metalúrgica Irmãos em Anápolis"
+          />
+        </div>
+      </div>
+
+      <!-- todo CONTAINER PRODUTOS ================== -->
+      <div class="lista_produtos_1">
+        <div class="lista_titulo_1">
+          <h3>Padrões</h3>
+        </div>
+        <div class="lista_padroes">
+          <div class="padroes_img">
+            <img src="./assets/produtos/padroes_1.png" />
+            <img src="./assets/produtos/padroes_2.png" />
+          </div>
+          <div class="padroes_info">
+            <ul>
+              <li>Padrões Monofásicos</li>
+              <li>Padrões Bifásicos</li>
+              <li>Padrões Trisfásicos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lista_produtos_2">
+        <div class="lista_titulo_2">
+          <h3>Quadros de Comando</h3>
+        </div>
+        
+        <div class="lista_comando">
+          <div class="comando_info">
+            
+            <ul>
+              <p>Tamanhos</p>
+              <li>300 X 200 X 200</li>
+              <li>300 X 300 X 200</li>
+              <li>500 X 400 X 200</li>
+              <li>600 X 600 X 200</li>
+              <li>800 X 600 X 200</li>
+              <li>1.000 X 800 X 200</li>
+            </ul>
+          </div>
+          
+          <div class="comando_img">
+            <img src="./assets/produtos/comando_1.png" />
+            <img src="./assets/produtos/comando_2.png" />
+          </div>
+        </div>
+        <div class="chamada_tamanhos">
+          <p>Trabalhamos com todos os tamanhos sob encomenda!</p>
+        </div>
+      </div>
+
+
+      <div class="lista_produtos_3">
+        <div class="lista_titulo_3">
+          <h3>Caixas Metálicas</h3>
+        </div>
+        <div class="lista_metalicas">
+          <div class="metalicas_img">
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_1.png" />
+              <p>Caixas Monofásicas</p>
+            </div>
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_2.png" />
+              <p>Caixas Trifásicas</p>
+            </div>
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_3.png" />
+              <p>Caixas Muflas e Proteção</p>
+            </div>
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_4.png" />
+              <p>Caixas de Medição</p>
+            </div>
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_5.png" />
+              <p>Caixas de correio</p>
+            </div>
+            <div class="metalicas_box">
+              <img src="./assets/produtos/metalicas_6.png" />
+              <p>Caixas de Hidrômetro</p>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="lista_produtos_4">
+        <div class="lista_titulo_4">
+          <h3>Caixas de Incêndio</h3>
+        </div>
+        <div class="lista_incendio">
+          <div class="incendio_info">
+            
+            <ul>
+              <p>Tamanhos</p>
+              <li>Caixas de Incêndio<br> 90x120x17 (embutir)</li>
+              <li>Caixas de Incêndio<br> 90x120x17 (sobrepor)</li>
+              <li>Caixas para Extintor<br> 700x300x250</li>
+            </ul>
+            <div class="chamada_contrutora">
+            <i class='bx bx-building-house bx-md'></i>
+            <h7><strong>Construa com Segurança:</strong> Caixas de Incêndio em Metal para Projetos da sua Construtora</h7>
+            
+            </div>
+          </div>
+          <div class="incendio_img">
+            <img src="./assets/produtos/incendio_1.png" />
+            <img src="./assets/produtos/incendio_2.png" />
+            <img src="./assets/produtos/incendio_3.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="lista_produtos_5">
+        <div class="lista_titulo_5">
+          <h3>Caixas para Telefone (Embutir e Sobrepor)</h3>
+        </div>
+        <div class="lista_telefone">
+          <div class="telefone_img">
+            <img src="./assets/produtos/telefone_1.png" />
+            <!-- <img src="./assets/produtos/telefone_2.png" /> -->
+            
+          </div>
+          <div class="telefone_info">
+            <ul>
+              <li> 200 X 200 X 120</li>
+              <li> 300 X 300 X 120</li>
+              <li> 400 X 400 X 120</li>
+              <li> 500 X 500 X 120</li>
+              <li> 600 X 600 X 120</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chamada_tamanhos">
+          <p>Trabalhamos com todos os tamanhos sob encomenda!</p>
+        </div>
+      </div>
+
+
+      <div class="lista_produtos_6">
+        <div class="lista_titulo_6">
+          <h3>Caixas de Passagem (Embutir e Sobrepor)</h3>
+        </div>
+        <div class="lista_passagem">
+          <div class="passagem_info">
+            
+            <ul>
+              <p>Tamanhos</p>
+              <li> 10 X 10 </li>
+              <li> 15 X 15 </li>
+              <li> 20 X 20 </li>
+              <li> 30 X 30 </li>
+              <li> 40 X 40 </li>
+              <li> 60 X 60 </li>
+            </ul>
+          </div>
+          <div class="passagem_img">
+            <img src="./assets/produtos/passagem_1.png" />
+            <!-- <img src="./assets/produtos/passagem_2.png" /> -->
+          </div>
+        </div>
+        <div class="chamada_tamanhos">
+          <p>Trabalhamos com todos os tamanhos sob encomenda!</p>
+        </div>
+      </div>
+
+
+      <div class="lista_produtos_7">
+        <div class="lista_titulo_7">
+          <h3>Tubos/Conduítes</h3>
+        </div>
+        <div class="lista_conduite">
+          <div class="conduite_img">
+            <img src="./assets/produtos/conduite_1.png" />
+            <img src="./assets/produtos/conduite_2.png" />
+            
+          </div>
+          <div class="conduite_info">
+            <ul>
+              <li> Tubos 3/4 </li>
+              <li> Tubos 1"</li>
+              <li> Tubos de 1.1/4</li>
+              <li> Tubos de 1.1/2 </li>
+              <li> Tubos 2"</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lista_produtos_8">
+        <div class="lista_titulo_8">
+          <h3>Ferragens Pesadas / Acessórios para Padrões</h3>
+        </div>
+        <div class="lista_ferragem">
+          <div class="ferragem_img">
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_1.png" />
+              <p>Tampão com dispositivo<br> pra lacre Galvanizado a fogo</p>
+            </div>
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_2.png" />
+              <p>Olhal</p>
+            </div>
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_3.png" />
+              <p>Suporte P/01 CX DT-400</p>
+            </div>
+            
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_6.png" />
+              <p>Curvas de 3/4 até 2"</p>
+            </div>
+            
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_5.png" />
+              <p>Racks<br>(Leve, Semipesado e Pesado)</p>
+            </div>
+            
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_7.png" />
+              <p>Padrões Equatorial</p>
+            </div>
+
+            <!-- <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_8.png" />
+              <p>Braço Luminária (1m, 1,5m e 3m) </p>
+            </div>
+
+            <div class="ferragem_box">
+              <img src="./assets/produtos/ferragem_4.png" />
+              <p>Haste Cantoneira e Haste âncora</p>
+            </div> -->
+          </div>
+          
+          </div>
+      </div>
+    </main>
+
+    <!-- ? ---------------- FOOTER ----------------------->
+
+    <footer>
+      <!-- todo CONTAINER   DUVIDAS ================== -->
+      <div class="container_footer">
+        <div class="footer_endereco">
+          <img src="./assets/logo_full.svg" />
+          <p>Fabricamos Padrões elétricos Equatorial, caixas de comando, caixas metálicas e acessórios!</p>
+          <i class="bx bx-map-pin"
+            >Endereço: Viela Vp-5D, Q10 - MOD 07 - DAIA, Anápolis - GO,
+            75132-120</i
+          >
+          <h6><strong>E-mail:</strong> mil@metalurgicairmaos.com.br</h6>
+        </div>
+        <div class="footer_mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4551.479927932284!2d-48.93409991465527!3d-16.40840618821886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ebb3cf24f837d%3A0x7e552c23653b7421!2sMetal%C3%BArgica%20irm%C3%A3os%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1708609023083!5m2!1spt-BR!2sbr"
+            width="350"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer_contato">
+          <p>Contato:</p>
+          <div class="box_telefone">
+            <i class="bx bx-phone-call"></i>
+            <p>(62) 3316-1886 (Fixo)</p>
+            
+          </div>
+          <div class="box_telefone">
+            <i class="bx bx-phone-call"></i>
+            <p>(62) 3316-1887 (Fixo)</p>
+            
+          </div>
+          <div class="box_telefone">
+            <i class="bx bx-phone-call"></i>
+            <p>(62) 99607-6523 (Whatsapp)</p>
+            
+          </div>
+          <button onclick="window.location.href = 'https://api.whatsapp.com/send?phone=62996076523';">Whatsapp</button>
+          
+          <button onclick="window.location.href = 'https://www.instagram.com/metalurgica.irmaos/';">Instagram</button>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+      </div>
+      <a href="#" class="back-to-top-btn">&uarr;</a>
+    </footer>
+
+
+  </body>
+
+</html>

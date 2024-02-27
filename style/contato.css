@@ -1,0 +1,322 @@
+/* * DEFININDO VARIÁVEIS GLOBAIS */
+
+:root {
+    --azul-escuro: #0A1535;
+    --azul-claro: #0468BE;
+    --branco-letra: #C4C4C4;
+    --cinza-texto: #373737;
+    --areia: #C09169;
+    --fonte-principal: "Raleway", sans-serif;
+    --fonte-secundaria: "Trirong", serif;
+    --fonte-terciaria: "Noto Sans", sans-serif;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+/* ! ================ MOBILE / 490 PX ================================ */
+@media screen and (max-width: 490px){
+    body{
+        overflow-x: hidden;
+    }
+    .back-to-top-btn{
+        display: none;
+    }
+    /* ? BANNER APRESENTACAO=============================== */
+
+    .contato_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_contato.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .contato_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+
+
+    }
+    .contato_titulo h1{
+        padding: 0 2rem;
+    }
+    .produtos_subtitulo h2{
+        padding: 0 0.2rem;
+    }
+    .contato_titulo {
+        
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--branco-letra);
+        
+        text-align: center;
+        width: 100vw;
+
+    }
+    
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        max-width: 100vw;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+        
+        padding: 2rem 1rem;
+        
+    }
+
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+    }
+    .contato_informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        font-family: var(--fonte-principal);
+        color: var(--azul-escuro);
+        font-weight: 500;
+        font-size: 22px;
+        row-gap: 3rem;
+    }
+
+    .contato_informacoes button{
+        width: max-content;
+        padding: 1rem;
+        font-family: var(--fonte-principal);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 24px;
+        border: 1px solid var(--azul-escuro);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .contato_informacoes button:hover{
+        cursor: pointer;
+        scale: 1.1;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+        border: 1px solid var(--branco-letra);
+    }
+    .instagram_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .instagram_box i{
+        color: var(--azul-escuro);
+    }
+}
+
+
+/* ! ================ mobile maiores ================================ */
+@media screen and (min-width: 491px) and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    /* ? BANNER APRESENTACAO=============================== */
+
+    .contato_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_contato.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .contato_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+
+
+    }
+
+    .contato_titulo {
+        
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--branco-letra);
+        
+        text-align: center;
+        width: 100vw;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        max-width: 100vw;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+        
+        padding: 2rem 1rem;
+        
+    }
+    .contato_titulo h1{
+        padding: 0 2rem;
+    }
+    .produtos_subtitulo h2{
+        padding: 0 0.2rem;
+    }
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+    }
+    .contato_informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        font-family: var(--fonte-principal);
+        color: var(--azul-escuro);
+        font-weight: 500;
+        font-size: 22px;
+        row-gap: 3rem;
+    }
+
+    .contato_informacoes button{
+        width: max-content;
+        padding: 1rem;
+        font-family: var(--fonte-principal);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 24px;
+        border: 1px solid var(--azul-escuro);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .contato_informacoes button:hover{
+        cursor: pointer;
+        scale: 1.1;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+        border: 1px solid var(--branco-letra);
+    }
+    .instagram_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .instagram_box i{
+        color: var(--azul-escuro);
+    }
+}
+/* ! ================ DESKTOP ================================ */
+@media screen and (min-width: 1201px) {
+
+    /* ? BANNER APRESENTACAO=============================== */
+
+    .contato_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_contato.png);
+        height: 594px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .contato_texto {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        justify-content: left;
+
+
+    }
+
+    .contato_titulo {
+        background-color: var(--azul-claro);
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--branco-letra);
+        padding: 2.5rem 6rem 2.5rem 3rem;
+        text-align: left;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding: 3rem 8rem 3rem 3rem;
+        font-size: 16px;
+        font-family: var(--fonte-secundaria);
+        text-align: left;
+    }
+
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+    }
+    .contato_informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        font-family: var(--fonte-principal);
+        color: var(--azul-escuro);
+        font-weight: 500;
+        font-size: 22px;
+        row-gap: 3rem;
+    }
+
+    .contato_informacoes button{
+        width: max-content;
+        padding: 1rem;
+        font-family: var(--fonte-principal);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 24px;
+        border: 1px solid var(--azul-escuro);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .contato_informacoes button:hover{
+        cursor: pointer;
+        scale: 1.1;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+        border: 1px solid var(--branco-letra);
+    }
+    .instagram_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .instagram_box i{
+        color: var(--azul-escuro);
+    }
+}

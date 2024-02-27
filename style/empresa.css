@@ -1,0 +1,658 @@
+/* * DEFININDO VARIÁVEIS GLOBAIS */
+
+:root {
+    --azul-escuro: #0A1535;
+    --azul-claro: #0468BE;
+    --branco-letra: #C4C4C4;
+    --cinza-texto: #373737;
+    --areia: #C09169;
+    --fonte-principal: "Raleway", sans-serif;
+    --fonte-secundaria: "Trirong", serif;
+    --fonte-terciaria: "Noto Sans", sans-serif;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+/* ! ================ MOBILE / 490 PX ================================ */
+@media screen and (max-width: 490px){
+    body{
+        overflow-x: hidden;
+    }
+    .back-to-top-btn{
+        display: none;
+    }
+    .banner_empresa {
+        background-image: url(../assets/background/bg_header_empresa.svg);
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 300px;
+
+    }
+    .banner_empresa_titulo {
+        width: 100vw;
+        height: 120px;
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .banner_empresa_titulo h2 {
+        font-family: var(--fonte-principal);
+        color: var(--branco-letra);
+        font-size: 38px;
+        
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner_empresa_img {
+        display: none;
+    }
+
+    .content_e1 {
+        display: none;
+    }
+    /* ? CONTAINER HISTÓRIA DA EMPRESA ===================== */
+
+    .container_historia {
+        margin-top: 4rem;
+        background-image: url(../assets/background/bg_historia.svg);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .historia_titulo {
+        width: 90vw;
+        height: 90px;
+        background-color: var(--azul-claro);
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -45px;
+    }
+
+    .historia_titulo h2 {
+        font-family: var(--fonte-principal);
+        font-style: 28px;
+        display: flex;
+        justify-content: left;
+        padding-left: 2rem;
+        font-weight: 700;
+        color: var(--branco-letra);
+
+    }
+
+    .historia_texto {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .historia_texto p {
+        width: 80vw;
+        color: var(--branco-letra);
+        font-family: var(--fonte-terciaria);
+        font-size: 20px;
+    }
+
+    .container_historia button {
+        width: 60vw;
+        height: 70px;
+        background-color: var(--azul-claro);
+        border: 1px solid var(--azul-escuro);
+        border-radius: 24px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: var(--branco-letra);
+        font-family: var(--fonte-principal);
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+
+
+    }
+
+    .container_historia button:hover {
+        cursor: pointer;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+    }
+    /* ? CONTAINER DESTAQUES ===================== */
+    .container_destaques {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .destaque_box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .destaque_box img{
+        width: 70vw;
+    }
+
+    .destaque_box p {
+        font-family: var(--fonte-secundaria);
+        color: var(--azul-escuro);
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 60vw;
+        padding: 1.5rem;
+        font-size: 22px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+        margin-bottom: 2rem;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+    /* ? CONTAINER EFICIENCIA E ENTREGA ===================== */
+    .container_fotos {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .fotos_titulo {
+        font-family: var(--fonte-principal);
+
+
+    }
+
+    .fotos_titulo h4 {
+        font-family: var(--fonte-principal);
+        font-size: 24px;
+        color: var(--branco-letra);
+        background-color: var(--azul-claro);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-left: 30vw;
+        padding-left: 1rem;
+        
+        
+
+    }
+
+    .fotos_imagens {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .fotos_imagens img {
+        max-width: 40vw;
+        padding-bottom: 2rem;
+    }
+}
+
+/* ! ================ NOTEBOOK E LAPTOPS ========================== */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .banner_empresa {
+        background-image: url(../assets/background/bg_header_empresa.svg);
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+
+    }
+
+    .banner_empresa_titulo {
+        position: relative;
+        width: 60vw;
+        height: 120px;
+        background-color: var(--areia);
+        left: 40%;
+        bottom: -20px;
+        display: flex;
+        margin-top: 4rem;
+
+
+    }
+
+    .banner_empresa_titulo h2 {
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 44px;
+        padding: 0 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner_empresa_img {
+        z-index: 999;
+        padding-left: 2rem;
+    }
+
+    .content_e1 {
+        width: 40vw;
+        background-color: var(--areia);
+        height: 100px;
+        position: relative;
+        top: -40px;
+    }
+
+    /* ? CONTAINER HISTÓRIA DA EMPRESA ===================== */
+
+    .container_historia {
+        margin-top: 8rem;
+        background-image: url(../assets/background/bg_historia.svg);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .historia_titulo {
+        width: 50vw;
+        height: 90px;
+        background-color: var(--azul-claro);
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -45px;
+    }
+
+    .historia_titulo h2 {
+        font-family: var(--fonte-principal);
+        font-style: 44px;
+        display: flex;
+        justify-content: left;
+        padding-left: 4rem;
+        font-weight: 700;
+        color: var(--branco-letra);
+
+    }
+
+    .historia_texto {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .historia_texto p {
+        width: 60vw;
+        color: var(--branco-letra);
+        font-family: var(--fonte-terciaria);
+        font-size: 22px;
+    }
+
+    .container_historia button {
+        width: 20vw;
+        height: 70px;
+        background-color: var(--azul-claro);
+        border: 1px solid var(--azul-escuro);
+        border-radius: 24px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: var(--branco-letra);
+        font-family: var(--fonte-principal);
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 2rem;
+
+
+    }
+
+    .container_historia button:hover {
+        cursor: pointer;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+    }
+
+
+    /* ? CONTAINER DESTAQUES ===================== */
+    .container_destaques {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .destaque_box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .destaque_box p {
+        font-family: var(--fonte-secundaria);
+        color: var(--azul-escuro);
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 30vw;
+        padding: 1.5rem;
+        font-size: 24px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+
+    /* ? CONTAINER EFICIENCIA E ENTREGA ===================== */
+    .container_fotos {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .fotos_titulo {
+        font-family: var(--fonte-principal);
+
+
+    }
+
+    .fotos_titulo h4 {
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--azul-claro);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+
+    }
+
+    .fotos_imagens {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .fotos_imagens img {
+        max-width: 35vw;
+        padding-bottom: 2rem;
+    }
+}
+
+/* ! ================ DESKTOP ================================ */
+@media screen and (min-width: 1201px) {
+    .banner_empresa {
+        background-image: url(../assets/background/bg_header_empresa.svg);
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .banner_empresa_titulo {
+        position: relative;
+        width: 60vw;
+        height: 120px;
+        background-color: var(--areia);
+        left: 40%;
+        bottom: -20px;
+        display: flex;
+        margin-top: 4rem;
+
+
+    }
+
+    .banner_empresa_titulo h2 {
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 44px;
+        padding: 0 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .banner_empresa_img {
+        z-index: 999;
+        padding-left: 2rem;
+    }
+
+    .content_e1 {
+        width: 40vw;
+        background-color: var(--areia);
+        height: 100px;
+        position: relative;
+        top: -40px;
+    }
+
+    /* ? CONTAINER HISTÓRIA DA EMPRESA ===================== */
+
+    .container_historia {
+        margin-top: 8rem;
+        background-image: url(../assets/background/bg_historia.svg);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .historia_titulo {
+        width: 50vw;
+        height: 90px;
+        background-color: var(--azul-claro);
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -45px;
+    }
+
+    .historia_titulo h2 {
+        font-family: var(--fonte-principal);
+        font-style: 44px;
+        display: flex;
+        justify-content: left;
+        padding-left: 4rem;
+        font-weight: 700;
+        color: var(--branco-letra);
+
+    }
+
+    .historia_texto {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .historia_texto p {
+        width: 60vw;
+        color: var(--branco-letra);
+        font-family: var(--fonte-terciaria);
+        font-size: 22px;
+    }
+
+    .container_historia button {
+        width: 20vw;
+        height: 70px;
+        background-color: var(--azul-claro);
+        border: 1px solid var(--azul-escuro);
+        border-radius: 24px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: var(--branco-letra);
+        font-family: var(--fonte-principal);
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 2rem;
+
+
+    }
+
+    .container_historia button:hover {
+        cursor: pointer;
+        background-color: var(--branco-letra);
+        color: var(--azul-escuro);
+    }
+
+
+    /* ? CONTAINER DESTAQUES ===================== */
+    .container_destaques {
+
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .destaque_box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .destaque_box p {
+        font-family: var(--fonte-secundaria);
+        color: var(--azul-escuro);
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 30vw;
+        padding: 1.5rem;
+        font-size: 24px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+
+    /* ? CONTAINER EFICIENCIA E ENTREGA ===================== */
+    .container_fotos {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos_titulo {
+        font-family: var(--fonte-principal);
+        margin-top: 4rem;
+
+    }
+
+    .fotos_titulo h4 {
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--azul-claro);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+
+    }
+
+    .fotos_imagens {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .fotos_imagens img {
+        max-width: 35vw;
+        padding-bottom: 2rem;
+    }
+}

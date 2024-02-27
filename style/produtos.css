@@ -1,0 +1,2803 @@
+/* * DEFININDO VARIÁVEIS GLOBAIS */
+
+:root {
+    --azul-escuro: #0A1535;
+    --azul-claro: #0468BE;
+    --branco-letra: #C4C4C4;
+    --cinza-texto: #373737;
+    --areia: #C09169;
+    --verde: #017031;
+    --fonte-principal: "Raleway", sans-serif;
+    --fonte-secundaria: "Trirong", serif;
+    --fonte-terciaria: "Noto Sans", sans-serif;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+/* ! ================ MOBILE / 490 PX ================================ */
+@media screen and (max-width: 490px){
+    body{
+        overflow-x: hidden;
+    }
+    .back-to-top-btn {
+        display: none;
+    }
+    .produtos_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_produtos.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+    .produtos_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .produtos_titulo {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--branco-letra);
+        text-align: center;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding: 0 0.5rem;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+    }
+    .apresentacao_imagem {
+        display: none;
+    }
+
+    .content_1 {
+        display: none;
+    }
+     /* ? LISTA DE PRODUTOS =============================== */
+     .lista_produtos_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_1 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_padroes {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .padroes_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        
+    }
+    .padroes_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .padroes_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-top: 4rem;
+        font-size: 16px;
+        justify-content: left;
+        text-align: left;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    /* ? QUADROS DE COMANDO =============================== */
+
+    .lista_produtos_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_2 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 4rem;
+        margin-top: 4rem;
+        padding-right: 1rem;
+
+
+    }
+
+    .lista_comando {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .comando_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        margin-right: 1.5rem;
+        
+    }
+    .comando_img img{
+        width: 50vw;
+    }
+    .comando_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .comando_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 3rem;
+        font-size: 18px;
+        justify-content: space-evenly;
+        padding-top:1rem; 
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        align-items: center;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 50vw;
+        padding: 1rem;
+        font-size: 18px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+        
+        margin-top: 2rem;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+
+
+    .lista_produtos_3 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_3 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 20vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_metalicas {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .metalicas_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .metalicas_img img{
+        width: 70vw;
+    }
+    .metalicas_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+    .metalicas_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .metalicas_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .lista_produtos_4 {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    .lista_titulo_4 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_incendio {
+        display: flex;
+        justify-content: center;
+
+    }
+    .incendio_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        
+    }
+    .incendio_img img{
+        width: 45vw;
+        
+    }
+
+    .incendio_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .incendio_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 2rem;
+        font-size: 14px;
+        padding-right: 1rem;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+    .chamada_contrutora {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--azul-claro);
+        max-width: 33vw;
+        font-family: var(--fonte-principal);
+        font-size: 11px;
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 18px;
+        padding: 0.5rem;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        text-align: center;
+        
+        
+    }
+    .chamada_contrutora i{
+        display: none;
+    }
+
+    .lista_produtos_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_5 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 25vw;
+        padding-left: 2rem;
+        padding-right: 4rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_telefone {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telefone_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .telefone_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .telefone_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 2rem;
+        font-size: 16px;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_6 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .lista_titulo_6 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_passagem {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .passagem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .passagem_img img{
+        width: 50vw;
+    }
+
+    .passagem_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    .passagem_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 3rem;
+        font-size: 16px;
+        justify-content: center;
+        padding-top: 2rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_7 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_7 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 25vw;
+        padding-left: 3rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_conduite {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .conduite_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        
+    }
+    .conduite_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .conduite_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 2rem;
+        font-size: 14px;
+        justify-content: center;
+        padding-top: 1rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        padding-left: 3rem;
+    }
+
+    .lista_produtos_8 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_8 {
+
+        font-family: var(--fonte-principal);
+        font-size: 24px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_ferragem {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+
+    }
+    .ferragem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .ferragem_img img{
+        width: 60vw;
+    }
+    .ferragem_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .ferragem_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    
+
+
+}
+
+/* ! ================ NOTEBOOK E LAPTOPS ========================== */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .produtos_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_produtos.png);
+        height: 594px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .produtos_texto {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        justify-content: left;
+
+
+    }
+
+    .produtos_titulo {
+        background-color: var(--verde);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--branco-letra);
+        padding: 2.5rem 6rem 2.5rem 3rem;
+        text-align: left;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding: 3rem 6rem 3rem 3rem;
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+        text-align: left;
+    }
+
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 48%;
+        bottom: -40px;
+    }
+
+    .content_1 {
+        background-color: var(--azul-claro);
+        height: 99px;
+        position: absolute;
+        width: 40vw;
+        right: -100px;
+        bottom: -46px;
+        z-index: -9999;
+    }
+    /* ? LISTA DE PRODUTOS =============================== */
+    .lista_produtos_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_1 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_padroes {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .padroes_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .padroes_img img{
+        width: 30vw;
+    }
+    .padroes_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_2 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_comando {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .comando_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .comando_img img{
+        width: 30vw;
+    }
+    .comando_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .comando_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        align-items: center;
+    }
+
+
+    .lista_produtos_3 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_3 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_metalicas {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .metalicas_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .metalicas_img img{
+        width: 30vw;
+    }
+    .metalicas_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+
+
+    .lista_produtos_4 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_4 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_incendio {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .incendio_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .incendio_img img{
+        width: 30vw;
+    }
+
+    .incendio_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .incendio_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_5 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_telefone {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telefone_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .telefone_img img{
+        width: 30vw;
+    }
+    .telefone_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_6 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_6 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_passagem {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .passagem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .passagem_img img{
+        width: 30vw;
+    }
+
+    .passagem_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .passagem_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_7 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_7 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_conduite {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .conduite_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .conduite_img img{
+        width: 30vw;
+    }
+    .conduite_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_8 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_8 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_ferragem {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+
+    }
+    .ferragem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    
+    .ferragem_img img{
+        width: 28vw;
+    }
+    .ferragem_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .ferragem_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    
+}
+/* ! ================ CELULARES MAIORES ================================ */
+@media screen and (min-width: 491px) and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .back-to-top-btn {
+        display: none;
+    }
+    .produtos_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_produtos.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+    .produtos_texto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+
+
+    }
+    .produtos_titulo {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--branco-letra);
+        text-align: center;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding:0 0 3rem 0;
+        font-size: 12px;
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+    }
+    .apresentacao_imagem {
+        display: none;
+    }
+
+    .content_1 {
+        display: none;
+    }
+     /* ? LISTA DE PRODUTOS =============================== */
+     .lista_produtos_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_1 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_padroes {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .padroes_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        
+    }
+    .padroes_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .padroes_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-top: 4rem;
+        font-size: 16px;
+        justify-content: left;
+        text-align: left;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    /* ? QUADROS DE COMANDO =============================== */
+
+    .lista_produtos_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_2 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 4rem;
+        margin-top: 4rem;
+        padding-right: 1rem;
+
+
+    }
+
+    .lista_comando {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .comando_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        margin-right: 1.5rem;
+        
+    }
+    .comando_img img{
+        width: 50vw;
+    }
+    .comando_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .comando_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 3rem;
+        font-size: 18px;
+        justify-content: space-evenly;
+        padding-top:1rem; 
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        align-items: center;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 50vw;
+        padding: 1rem;
+        font-size: 18px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+        
+        margin-top: 2rem;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+
+
+    .lista_produtos_3 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_3 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 20vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_metalicas {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .metalicas_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .metalicas_img img{
+        width: 70vw;
+    }
+    .metalicas_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+    .metalicas_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .metalicas_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .lista_produtos_4 {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    .lista_titulo_4 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_incendio {
+        display: flex;
+        justify-content: center;
+
+    }
+    .incendio_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        
+    }
+    .incendio_img img{
+        width: 45vw;
+        
+    }
+
+    .incendio_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .incendio_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 2rem;
+        font-size: 14px;
+        padding-right: 1rem;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+    .chamada_contrutora {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--azul-claro);
+        max-width: 33vw;
+        font-family: var(--fonte-principal);
+        font-size: 11px;
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 18px;
+        padding: 0.5rem;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        text-align: center;
+        margin-right: 2rem;
+        
+        
+    }
+    .chamada_contrutora i{
+        display: none;
+    }
+
+    .lista_produtos_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_5 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 25vw;
+        padding-left: 2rem;
+        padding-right: 4rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_telefone {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telefone_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .telefone_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .telefone_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 2rem;
+        font-size: 16px;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_6 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .lista_titulo_6 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_passagem {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .passagem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .passagem_img img{
+        width: 50vw;
+    }
+
+    .passagem_info p{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    .passagem_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 3rem;
+        font-size: 16px;
+        justify-content: center;
+        padding-top: 2rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_7 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_7 {
+
+        font-family: var(--fonte-principal);
+        font-size: 26px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 80px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 25vw;
+        padding-left: 3rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_conduite {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .conduite_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        
+    }
+    .conduite_img img{
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    .conduite_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 2rem;
+        font-size: 14px;
+        justify-content: center;
+        padding-top: 1rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        padding-left: 3rem;
+    }
+
+    .lista_produtos_8 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_8 {
+
+        font-family: var(--fonte-principal);
+        font-size: 24px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_ferragem {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+
+    }
+    .ferragem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .ferragem_img img{
+        width: 60vw;
+    }
+    .ferragem_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .ferragem_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    
+
+
+}
+
+/* ! ================ NOTEBOOK E LAPTOPS ========================== */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .back-to-top-btn{
+        display: none;
+    }
+    
+    .produtos_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_produtos.png);
+        height: 594px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .produtos_texto {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        justify-content: left;
+
+
+    }
+
+    .produtos_titulo {
+        background-color: var(--verde);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--branco-letra);
+        padding: 2.5rem 6rem 2.5rem 3rem;
+        text-align: left;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding: 3rem 6rem 3rem 3rem;
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+        text-align: left;
+    }
+
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 48%;
+        bottom: -40px;
+    }
+
+    .content_1 {
+        background-color: var(--azul-claro);
+        height: 99px;
+        position: absolute;
+        width: 40vw;
+        right: -100px;
+        bottom: -46px;
+        z-index: -9999;
+    }
+    /* ? LISTA DE PRODUTOS =============================== */
+    .lista_produtos_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_1 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_padroes {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .padroes_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .padroes_img img{
+        width: 30vw;
+    }
+    .padroes_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_2 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_comando {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .comando_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .comando_img img{
+        width: 30vw;
+    }
+    .comando_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .comando_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        align-items: center;
+    }
+
+
+    .lista_produtos_3 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_3 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_metalicas {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .metalicas_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .metalicas_img img{
+        width: 30vw;
+    }
+    .metalicas_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+
+
+    .lista_produtos_4 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_4 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_incendio {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .incendio_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .incendio_img img{
+        width: 30vw;
+    }
+
+    .incendio_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .incendio_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_5 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_telefone {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telefone_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .telefone_img img{
+        width: 30vw;
+    }
+    .telefone_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_6 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_6 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_passagem {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .passagem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .passagem_img img{
+        width: 30vw;
+    }
+
+    .passagem_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .passagem_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_7 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_7 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_conduite {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .conduite_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .conduite_img img{
+        width: 30vw;
+    }
+    .conduite_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_8 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_8 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_ferragem {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+
+    }
+    .ferragem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    
+    .ferragem_img img{
+        width: 28vw;
+    }
+    .ferragem_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .ferragem_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+/* ! ================ DESKTOP ================================ */
+@media screen and (min-width: 1201px) {
+    /* ? BANNER APRESENTACAO=============================== */
+
+    .produtos_apresentacao {
+        display: flex;
+        background-image: url(../assets/background/bg_header_produtos.png);
+        height: 594px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .produtos_texto {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        justify-content: left;
+
+
+    }
+
+    .produtos_titulo {
+        background-color: var(--verde);
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--branco-letra);
+        padding: 2.5rem 6rem 2.5rem 3rem;
+        text-align: left;
+
+    }
+
+    .produtos_subtitulo {
+        color: var(--branco-letra);
+        padding: 3rem 6rem 3rem 3rem;
+        font-size: 18px;
+        font-family: var(--fonte-secundaria);
+        text-align: left;
+    }
+
+
+    .apresentacao_imagem {
+        z-index: 9999;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+    }
+
+    .content_1 {
+        background-color: var(--azul-claro);
+        height: 99px;
+        position: absolute;
+        width: 40vw;
+        right: -100px;
+        bottom: -46px;
+        z-index: -9999;
+    }
+
+
+    /* ? LISTA DE PRODUTOS =============================== */
+    .lista_produtos_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_1 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_padroes {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .padroes_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .padroes_img img{
+        width: 30vw;
+    }
+    .padroes_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_2 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_comando {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .comando_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .comando_img img{
+        width: 30vw;
+    }
+    .comando_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .comando_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        align-items: center;
+    }
+    .chamada_tamanhos{
+        border: 2px solid var(--azul-escuro);
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        width: 25vw;
+        padding: 1.5rem;
+        font-size: 22px;
+        margin: 0 auto;
+        border-radius: 16px;
+        text-align: center;
+        font-weight: 700;
+        animation: pulsar 0.5s infinite alternate;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(1); /* Tamanho normal */
+
+        }
+        100% {
+            transform: scale(1.1); /* Aumenta 10% o tamanho */
+            background-color: var(--azul-claro);
+            border: 2px solid var(--azul-claro);
+        }
+    }
+
+
+    .lista_produtos_3 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_3 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_metalicas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .metalicas_img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        column-gap: 2.5rem;
+        text-align: center;
+        
+    }
+    .metalicas_img img{
+        width: 25vw;
+    }
+    .metalicas_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .metalicas_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+
+
+
+    .lista_produtos_4 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_4 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_incendio {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .incendio_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .incendio_img img{
+        width: 30vw;
+    }
+
+    .incendio_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .incendio_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+        padding-bottom: 3rem;
+    }
+    .chamada_contrutora {
+        display: flex;
+        flex-direction: column;
+        border: 8px solid var(--azul-claro);
+        max-width: 30vw;
+        font-family: var(--fonte-principal);
+        font-size: 22px;
+        color: var(--branco-letra);
+        background-color: var(--azul-escuro);
+        border-radius: 18px;
+        padding: 1.8rem;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        
+    }
+    .lista_produtos_5 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_5 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 20vw;
+        padding-left: 10rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_telefone {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telefone_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .telefone_img img{
+        width: 30vw;
+    }
+    .telefone_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_6 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_6 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_passagem {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .passagem_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        margin-right: 2rem;
+        
+    }
+    .passagem_img img{
+        width: 30vw;
+    }
+
+    .passagem_info p{
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+        color: var(--verde);
+        font-weight: 700;
+        display: flex;
+        
+        
+    }
+    .passagem_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 5rem;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 10rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_7 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_7 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+    .lista_conduite {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .conduite_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+    .conduite_img img{
+        width: 30vw;
+    }
+    .conduite_info ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-right: 20vw;
+        font-size: 28px;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        color: var(--cinza-texto);
+        font-family: var(--fonte-secundaria);
+    }
+
+    .lista_produtos_8 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .lista_titulo_8 {
+
+        font-family: var(--fonte-principal);
+        font-size: 38px;
+        color: var(--branco-letra);
+        background-color: var(--verde);
+        height: 130px;
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 40vw;
+        padding-left: 5rem;
+        margin-top: 4rem;
+
+
+    }
+
+    .lista_ferragem {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+
+    }
+    .ferragem_img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 3rem;
+        
+        
+    }
+    .ferragem_img img{
+        width: 28vw;
+    }
+    .ferragem_box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .ferragem_box p{
+        font-family: var(--fonte-principal);
+        color: var(--cinza-texto);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    
+}
